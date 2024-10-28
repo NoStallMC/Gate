@@ -1,0 +1,25 @@
+author: matejkoo
+description: Gate plugin
+main: main.java.org.matejko.plugin.Gate
+name: Gates
+version: 5
+commands:
+  tohere:
+    description: Creates a new gate and sets the destination.
+    usage: /<command> <name>
+    permission: gates.tohere
+    permission-message: You do not have permission to use this command.
+  
+  delgate:
+    description: Deletes an existing gate by its ID.
+    usage: /<command> <gateId>
+    permission: gates.delgate
+    permission-message: You do not have permission to use this command.
+
+permissions:
+  gates.tohere:
+    description: Allows the player to set a gate and its destination.
+    default: op
+  gates.delgate:
+    description: Allows the player to delete a gate.
+    default: op
